@@ -1,0 +1,38 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+.nbq{
+    left: 30px;
+    top:30px;
+    height: 100px;
+    width:100px;
+    background-color: blue;
+    position: absolute;
+}
+.nbw{
+    left: 30px;
+    top:30px;
+    height: 100px;
+    width:100px;
+    background-color: red;
+    position: relative;
+    transform: rotate(45deg);
+}
+.wrapper{
+    height:400px;
+    width: 800px;
+    background-color: aqua;
+}
+.btn1{
+    border:none;
+    background-color: aquamarine;
+    font-size: 2rem;
+    font-family: serif;
+    font-weight: bold;
+    color: black;
+    letter-spacing: 1px;
+    width:400px;
+    margin-top:50px;
+    margin-left:200px;
+}

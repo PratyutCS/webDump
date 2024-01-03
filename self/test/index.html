@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .imga {
+            width: 7.5%;
+            position: absolute;
+            animation: rotate 2s infinite linear;
+            transform-style: preserve-3d;
+        }
+        @keyframes rotate {
+            0% { transform: translateZ(-50px) rotateY(0deg);}
+            100% { transform: translateZ(-50px) rotateY(360deg);}
+        }
+        .loader{
+            position: absolute;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+        }
+        .content{
+            position: absolute;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .ga{
+            margin: 1em;
+        }
+    </style>
+</head>
+<body>
+    <div class="loader">
+        <img class="imga" src="./bmu-logo.png" alt="Loading...">
+    </div>
+    <div class="content">
+        <img class="ga" src="https://picsum.photos/300/300/?random" alt="images">
+        <img class="ga" src="https://picsum.photos/300/300/?random" alt="images">
+    </div>
+    <script type="text/javascript">
+        window.addEventListener("load",function(){
+            const loader = document.querySelector(".loader");
+            loader.style.display = "none";
+        })
+    </script>
+</body>
+</html>

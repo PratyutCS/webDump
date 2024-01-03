@@ -1,0 +1,31 @@
+{
+    "md":
+    [{
+        "b":["1.jpg","2.jpg","3.jpg","4.png","5.jpg","6.jpg","7.jpg","8.jpg","9.jpg","10.jpg"],
+        "c":["11.jpg","22.jpg","33.png","44.png","55.jpg","66.jpg","77.jpg","88.jpg","99.jpg","1010.jpg"],
+        "m":["down.mp3","closer.mp3","roses.mp3","brownies.mp3","rise.mp3","way.mp3","answer.mp3","hymn.mp3","cold.mp3","sunroof.mp3"],
+        "l":[0,0,0,0,0,0,0,0,0,0],
+        "n":["Don't let me down","Closer","Roses","Sugar and Brownies","Rise up","Way back home","Why did I answer","Hymn for the Weekend","Cold","Sunroof"]
+    }],
+    "share":"share.png",
+    "instagram":"whin.png",
+    "disk":"cd1.png",
+    "facebook":"f.png",
+    "love":"ih.png",
+    "back1":"lt.png",
+    "mvolume":"max.png",
+    "nvolume":"sou.png",
+    "muvolume":"mut.png",
+    "play":"play.png",
+    "pause":"pause.png",
+    "icplay":"play2.png",
+    "blove":"oh.png",
+    "twitter":"tw.png",
+    "next":"nex.png",
+    "back":"bac.png",
+    "devimg":"pr1.jpeg",
+    "main":"pp.png",
+    "bubble":"bubble.png",
+    "bgabt":"l1.jpg",
+    "bgon":"w1.jpg"
+}

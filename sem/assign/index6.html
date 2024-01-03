@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header></header>
+    <script>
+        let h1=document.createElement("h1");
+        let h2=document.createElement("h1");
+        let h3=document.createElement("h1");
+        let h4=document.createElement("h1");
+        let nb=document.createElement("h2");
+        let head=document.querySelector("header");
+        class student{
+            static roll;
+            constructor(name,sub1,sub2,sub3){
+                this.roll=student.roll++;
+                this.name=name;
+                this.sub1=sub1;
+                this.sub2=sub2;
+                this.sub3=sub3;
+            }
+            disp(q){
+                console.log(this.name+" "+this.sub1+" "+this.sub2+" "+this.sub3);
+                q.textContent=this.name+" "+this.sub1+" "+this.sub2+" "+this.sub3;
+            }
+            result(w){
+                let per=(this.sub1+this.sub2+this.sub3)/3;
+                if(per<40)
+                {
+                console.log("fail");
+                w.textContent=per+" fail";
+                }
+                else{
+                console.log("pass");
+                w.textContent=per+" pass";
+                }
+            }
+        }
+        ob=new student("pratyut",10,20,30);
+        ob.disp(h1);
+        ob.result(h2);
+        ob.result(nb);
+        console.log(nb);
+        ob1=new student("aikata",90,90,90);
+        ob1.disp(h3);
+        ob1.result(h4);
+        head.appendChild(h1);
+        head.appendChild(h2);
+        head.appendChild(h3);
+        head.appendChild(h4);
+    </script>
+</body>
+</html>

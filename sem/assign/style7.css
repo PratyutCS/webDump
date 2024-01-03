@@ -1,0 +1,20 @@
+*{
+    margin:0;
+    padding:0;
+}
+input{
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border-color: black;
+    border-width: 2px;
+}
+.cont{
+    margin-left: 40%;
+    margin-top: 12%;
+}
+.ne{
+    margin-left: 100px;
+}
+.ba{
+    margin-left: 100px;
+}

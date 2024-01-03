@@ -1,0 +1,218 @@
+*{
+    margin:0;
+    padding:0;
+    }
+    .main
+    {
+    width:100%;
+    background: linear-gradient(to top,rgba(0,0,0,0),rgba(0,0,0,0)),url(1.jpg);
+    background-position:center;
+    background-size:cover;
+    position:relative;
+    overflow:hidden;
+    height:109vh;
+    }
+    .navbar
+    {
+    width:1200px;
+    height:75px;
+    margin:auto;
+    }
+    .icon
+    {
+    width:200px;
+    float: left;
+    height:70px;
+    }
+    .logo
+    {
+    color:orange;
+    font-size:35px;
+    font-family: Serif;
+    padding-left:20px;
+    margin-top:2px;
+    float:left;
+    }
+    
+    .menu
+    {
+    width:400px;
+    float: left;
+    height:70px;
+    }
+    
+    ul
+    {
+    float:left;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    }
+    
+    ul li
+    {
+    list-style:none;
+    margin-left:62px;
+    margin-top:27px;
+    font-size:14px;
+    
+    }
+    
+    ul li a
+    {
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+    font-family: Serif;
+    transition:0.3s ease-in-out;
+    }
+    
+    ul li button
+    {
+        background-color: transparent;
+        font-size: 14px;
+        font-family: serif;
+        font-weight: bold;
+        color: white;
+        transition: 0.3s ease-in-out;
+    }
+
+    ul li button:hover
+    {
+    color:orange;
+    }
+    
+    ul li a:hover
+    {
+    color:orange;
+    }
+    
+    .search
+    {
+    width:330px;
+    float:left;
+    margin-left:270px;
+    }
+    
+    ul li button
+    {
+    background-color:transparent;
+    }
+    
+    .srch
+    {
+    font-family:Serif;
+    background:transparent;
+    height:40px;
+    width:200px;
+    text-align:center;
+    border:1px solid orange;
+    margin-top:14px;
+    color:white;
+    border-right:none;
+    font-size:16px;
+    padding:10px;
+    border-bottom-left-radius:5px;
+    border-top-left-radius:5px;
+    font-weight: bold;
+    }
+    
+    .srch:focus
+    {
+    outline:none;
+    }
+    
+    .btn1
+    {
+    width:100px;
+    height:40px;
+    background:orange;
+    border:2px solid orange;
+    margin-top:14px;
+    border-bottom-left-radius:5px;
+    border-top-left-radius:5px;
+    color:white;
+    font-size:15px;
+    font-weight: bold;
+    }
+    
+    .btn1:focus
+    {
+    outline:none;
+    }
+    .bubbles img{
+        width:50px;
+        animation: bubble 7s linear infinite;
+    }
+    .bubbles{
+        width:100%;
+        display:flex;
+        align-items: center;
+        justify-content: space-around;
+        position: absolute;
+        bottom:-70px;
+    }
+
+    @keyframes bubble{
+        0%{
+            transform: translateY(0);
+            opacity: 0;
+        }
+        25%
+        {
+            opacity: 0.5;
+        }
+        50%{
+            opacity: 0.75;
+        }
+        75%{
+            opacity: 1;
+        }
+        95%{
+            opacity: 0.5;
+        }
+        100%{
+            transform: translateY(-80vh);
+            opacity: 0;
+        }
+    }
+    .bubbles img:nth-child(1){
+        animation-delay: 1s;
+        width:35px;
+    }
+    
+    .bubbles img:nth-child(2){
+        width:70px;
+        animation-delay: 3s;
+    }
+    .bubbles img:nth-child(3){
+        animation-delay: 6s;
+        width:40px;
+    }
+    .bubbles img:nth-child(4){
+        width:55px;
+        animation-delay: 9s;
+    }
+    .bubbles img:nth-child(5){
+        width:50px;
+        animation-delay: 11s;
+    }
+    
+    .bubbles img:nth-child(6){
+        width:30px;
+        animation-delay: 7s;
+    }
+    
+    .bubbles img:nth-child(7){
+        width:80px;
+        animation-delay: 10s;
+    }
+#list{
+    font-size:  1.5em;
+    margin-left: 90px;
+   }
+ 
+.animals{
+    color:aliceblue;
+   display: list-item;    
+  } 

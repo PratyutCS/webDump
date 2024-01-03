@@ -1,0 +1,43 @@
+*{
+    margin:0;
+    padding:0;
+}
+.box{
+    height:200px;
+    width:300px;
+    background-color: bisque;
+    margin: auto;
+    padding: 20px;
+}
+span{
+    font-weight: bold;
+    font-size: 30px;
+}
+.btn1{
+    margin-left: 20px;
+    height:40px;
+    width:40px;
+    background-image: url(./play.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;
+}
+.btn2{
+    margin-left: 20px;
+    height:40px;
+    width:40px;
+    background-image: url(./reset.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;
+}
+.smbx{
+    height: 50px;
+    width:50px;
+    background-color: yellowgreen;
+    margin-top: 50px;
+    margin-left: 100px;
+    transform: scale(1);
+}

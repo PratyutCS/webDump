@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: black;
+        }
+        .scroll_watcher{
+            height: 1vh;
+            position:fixed;
+            top: 0;
+            z-index: 10000;
+            background-color: lime;
+            width: 100%;
+            scale: 0 1;
+            animation: scroll-watcher linear;
+            animation-timeline: scroll();
+            transform-origin: left;
+        }
+        @keyframes scroll-watcher {
+            to {
+                scale: 1 1;
+            }
+        }
+        .blud{
+            height: 200vh;
+            display: flex;
+            justify-content: center;
+        }
+        .blud > img{
+            width: 45vw;
+            height: 100vh;
+            margin-top: 100vh;
+            animation: fade-in linear forwards;
+            /* animation-timeline: view(80vh 0vh); */
+            animation-timeline: view();
+            /* animation-range-start: 0vh;
+            animation-range-end: 50vh; */
+            animation-range: entry;
+        }
+        @keyframes fade-in {
+            0% { scale:0.7 1;
+            opacity: 0;}
+            100% { scale: 1 1;
+            opacity: 1;}
+        }
+        .zoom{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 150vh;
+            margin-left: 25%;
+            width: 50%;
+            background-image: url("/ahin.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            transform-origin: top;
+            animation: xoom-in linear forwards;
+            animation-timeline: view();
+            animation-range: exit;
+        }
+        @keyframes xoom-in{
+            0%{opacity: 1;}
+            99%{opacity: 0;
+            scale: 3;}
+            100%{opacity: 0;
+            scale: 1;}
+        }
+        .zoom .content{
+            color: white;
+            font-size: 20vh;
+            animation: go-up linear forwards;
+            animation-timeline: view();
+            animation-range: exit;
+        }
+        @keyframes go-up {
+            100%{transform: translateY(-200%);}
+        }
+        .zoom .content ul{
+            list-style: none;
+            display: flex;
+            gap:1rem;
+            max-width: 80vw;
+            width: 80vw;
+            flex-wrap: wrap;
+        }
+        .zoom[data-animated = "true"] > .content{
+            overflow: hidden;
+            mask: linear-gradient(90deg,transparent,white 10%,white 90%,transparent);
+        }
+        .zoom[data-animated = "true"] > .content > ul{
+            width: max-content;
+            flex-wrap: nowrap;
+            animation: scr 3s linear infinite;
+        }
+        @keyframes scr {
+            to  {
+                transform: translate(calc(-100% - 1rem));
+            }
+        }
+        .scroll-reveal{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            width: 50%;
+            margin-left: 25%;
+        }
+        .scroll-reveal h1 span,p span{
+            background-image: linear-gradient(90deg,#1FA2FF,#12D8FA,#A6FFCB);
+            background-clip: text;
+            background-repeat: no-repeat;
+            background-size: 0% 100%;
+            color: hsl(0 0% 100% / 0.2);
+            animation: scroll-reveal linear forwards;
+            animation-timeline: view();
+        }
+        .scroll-reveal h1{
+            height: 5vh;
+            margin: 0;
+            letter-spacing: 0.1rem;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .scroll-reveal p{
+            margin: 0;
+            height: 10vh;
+            letter-spacing: 0.1rem;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .scroll-reveal h1 span{
+            animation-range-start: contain 20vh;
+            animation-range-end: contain 30vh;
+        }
+        .scroll-reveal p span{
+            animation-range-start: contain 25vh;
+            animation-range-end: contain 40vh;
+        }
+        @keyframes scroll-reveal {
+            100%{
+                background-size: 100% 100%;
+            }            
+        }
+    </style>
+</head>
+<body>
+    <div class="scroll_watcher"></div>
+    <div class="zoom">
+        <div class="content">
+            <ul>
+                <li>q1</li>
+                <li>q2</li>
+                <li>q3</li>
+                <li>q4</li>
+                <li>q5</li>
+                <li>q6</li>
+                <li>q7</li>
+                <li>q8</li>
+                <li>q1</li>
+                <li>q2</li>
+                <li>q3</li>
+                <li>q4</li>
+                <li>q5</li>
+                <li>q6</li>
+                <li>q7</li>
+                <li>q8</li>
+            </ul>
+        </div>
+    </div>
+    <div class="blud">
+        <img src="/largephoto1637542.jpg">
+    </div>
+    <div class = "scroll-reveal">
+        <h1><span>YEAH BABY</span></h1>
+        <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem dolores dolore expedita architecto iure fugiat cupiditate perspiciatis nisi rerum, quas, eum, corporis natus debitis autem consequuntur doloremque mollitia similique alias.</span></p>
+    </div>
+    <script>
+        const scroller = document.querySelector(".zoom");
+        scroller.setAttribute("data-animated",true);
+        
+    </script>
+</body>
+</html>

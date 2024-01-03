@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test1</title>
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="./fil.js"></script>
+  </head>
+  <body>
+  <header>
+    <nav>
+      <h1 class="head">WIRTUAL</h1>
+      <a href="#home" class="active">Discover</a>
+      <a href="#about">About</a>
+      <button class="lgbtn" onclick="lol()" style="float: right; border-radius: 5px;""> Login </button>
+    </nav>
+  </header>
+
+  <section id="home">
+    <div class="bubbles">
+      <img src="./bubble.png" >
+      <img src="./bubble.png" >
+      <img src="./bubble.png" >
+      <img src="./bubble.png" >
+      <img src="./bubble.png" >
+      <img src="./bubble.png" >
+      <img src="./bubble.png" >
+     </div>
+    <div class="container reveal">
+      <div id='login-form'class='login-page'>
+        <div class="form-box">
+          <div class='button-box'>
+            <div id='btn'></div>
+            <button type='button'onclick='login()'class='toggle-btn'>Log In</button>
+            <button type='button'onclick='register()'class='toggle-btn'>Register</button>
+          </div>
+          <form id='login' class='input-group-login'>
+            <input type='text' id='lgt' class='input-field'placeholder='Email Id' required >
+            <input type='password' id='lgp' class='input-field'placeholder='Enter Password' required>
+            <input type='checkbox'class='check-box'><span>Remember Password</span>
+            <button type='submit'class='submit-btn' onclick="check()">Log in</button>
+          </form>
+          <form id='register' class='input-group-register'>
+            <input type='text'class='input-field'placeholder='First Name' required>
+            <input type='text'class='input-field'placeholder='Last Name ' required>
+            <input type='email'class='input-field'placeholder='Email Id' required>
+            <input type='password'class='input-field'placeholder='Enter Password' required>
+            <input type='password'class='input-field'placeholder='Confirm Password'  required>
+            <input type='checkbox'class='check-box'><span>I agree to the terms and conditions</span>
+            <button type='submit'class='submit-btn'>Register</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container reveal">
+      <h2>Contact</h2>
+      <div class="text-container">
+        <div class="text-box">
+          
+          <div class="flip-card">
+            <div class="flip-card-inner">
+               <div class="flip-card-front">
+                 <img src="./2.jpg" alt="Avatar" style="width:300px;height:300px;">
+               </div>
+               <div class="flip-card-back">
+                 <h1>Siri</h1>
+                 <p>C.S Engineer</p>
+                 <p>We love that girl</p>
+               </div>
+             </div>
+           </div>
+           
+         </div>
+         <div class="text-box">
+           
+           <div class="flip-card">
+            <div class="flip-card-inner">
+               <div class="flip-card-front">
+                 <img src="./2.jpg" alt="Avatar" style="width:300px;height:300px;">
+               </div>
+               <div class="flip-card-back">
+                 <h1>PRATYUT</h1>
+                 <p>C.S Engineer</p>
+                 <p>We love that guy</p>
+                 <button class="ibtn" onclick="window.open('https://www.instagram.com/_pratyut_/')"></button>
+               </div>
+             </div>
+           </div>
+           
+         </div>
+         <div class="text-box">
+           
+           <div class="flip-card">
+            <div class="flip-card-inner">
+               <div class="flip-card-front">
+                 <img src="./2.jpg" alt="Avatar" style="width:300px;height:300px;">
+               </div>
+               <div class="flip-card-back">
+                 <h1>Rajeshwari</h1>
+                 <p>C.S Engineer</p>
+                 <p>We love that girl</p>
+               </div>
+             </div>
+           </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- <section id="services">
+    <div class="container reveal">
+      <h2>Services</h2>
+      <div class="text-container">
+        <div class="text-box">
+          <h3>Section text</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+            eius molestiae perferendis eos provident vitae iste.
+          </p>
+        </div>
+        <div class="text-box">
+          <h3>Section Text</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+            eius molestiae perferendis eos provident vitae iste.
+          </p>
+        </div>
+        <div class="text-box">
+          <h3>Section Text</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+            eius molestiae perferendis eos provident vitae iste.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+-->
+<!--  <section id="contact">
+    <div class="container reveal">
+      <h2>Contact</h2>
+      <div class="text-container">
+        <div class="text-box">
+          
+          <h3>Section Text</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+            eius molestiae perferendis eos provident vitae iste. Lorem ipsum
+            dolor sit amet consectetur adipisicing elit. Quam blanditiis,
+            officiis, voluptate quisquam aperiam nobis est, quis neque esse
+            soluta dolores iste sit corrupti! Magnam, delectus qui. Odit,
+            accusamus doloremque.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex est
+            rerum id quis eaque rem suscipit reprehenderit quaerat vero
+            nesciunt?
+          </p>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Voluptatum, eaque voluptatibus. Eaque tempore quam nesciunt. Lorem
+            ipsum dolor sit amet consectetur adipisicing elit. Eum adipisci
+            blanditiis assumenda atque officiis? Vel, fuga facilis quia
+            reprehenderit nihil optio harum. Quo sapiente veniam atque
+            corporis tempora non repellat?
+          </p>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+-->
+</body>
+</html>

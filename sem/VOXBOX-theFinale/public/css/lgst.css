@@ -1,0 +1,236 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:0;
+    padding:0;
+    height:100vh;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    /* background-size: 300% 300%;
+    background-image: linear-gradient(
+          -45deg, 
+          rgba(59,173,227,1) 0%, 
+          rgba(87,111,230,1) 25%, 
+          rgba(152,68,183,1) 51%, 
+          rgba(255,53,127,1) 100%
+    );  
+    animation: Anime 10s ease infinite; */
+    background-color: #0e1538;
+    cursor: none;
+}
+@keyframes Anime { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+  }
+
+
+  .box{
+    position: absolute;
+    width: 410px;
+    height: 485px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0e1538;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .box::before{
+    content: '';
+    position: absolute;
+    width: 150px;
+    height: 140%;
+    background: linear-gradient(#00ccff,#d400d4);
+    animation: rot 4s linear infinite;
+  }
+
+  @keyframes rot {
+
+    0%{
+      transform: rotate(0deg);
+    }
+    100%{
+      transform: rotate(360deg);
+    }
+    
+  }
+.cursor{
+  z-index: 999;
+  position: fixed;
+  background: #2696E8;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  pointer-events: none;
+  box-shadow: 0 0 20px #2696E8,
+              0 0 30px #2696E8;
+  animation: colors 5s infinite;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+@keyframes colors{
+  0%{
+    filter: hue-rotate(0deg);
+  }
+  100%{
+    filter: hue-rotate(360deg);
+  }
+}
+
+.cursor:before{
+  content: '';
+  position: absolute;
+  background: #2696E8;
+  width: 50px;
+  height: 50px;
+  opacity: 0.2;
+  transform: translate(-30%, -30%);
+  border-radius: 50%;
+}
+
+
+.lgd{
+  z-index: 10000;
+    position:absolute;
+    height:auto;
+    width:400px;
+    background: #000115;
+    border-radius: 10px;
+}
+
+
+
+.ex{
+    text-align: center;
+    font-weight: bold;
+    font-family: serif;
+    padding:0 0 20px 0;
+}
+.pl{
+
+    text-align: center;
+    font-weight: bold;
+    font-family: serif;
+    padding:0 0 20px 0px;
+    letter-spacing: 2px;
+    color: white;
+}
+form {
+    padding:0 40px;
+    box-sizing: border-box;
+  }
+  .tf {
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin:50px 0;
+    background-color: #000115;
+  }
+  input{
+    width: 100%;
+    padding: 0 5px;
+    height:40px;
+    font-size: 16px;
+    outline:none;
+    border: none;
+    border-radius: 10px;
+    background-color: #000115;
+    color: white;
+  }
+  .lab1 {
+    order: -1;
+    position:absolute;
+    left: 5px;
+    color:#999;
+    font-size: 20px;
+    letter-spacing: 2px;
+    transition: all 0.2s ease-in;
+    transform: translateY(-30px);
+    pointer-events: none;
+  }
+  .lab2 {
+    order: -1;
+    position:absolute;
+    left: 5px;
+    color:#999;
+    font-size: 20px;
+    letter-spacing: 2px;
+    transition: all 0.2s ease-in;
+    transform: translateY(-30px);
+    pointer-events: none;
+  }
+  input:focus + label {
+    transform: translateY(-60px);
+    letter-spacing: 1px;
+    color: white;
+  }
+  
+form button{
+    width:80%;
+    height:50px;
+    border: none;
+    border-radius: 32px;
+    background-color: #0e1538;
+    /* background-image: url(./lg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; */
+    font-size: 20px;
+    color:white;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-left: 10%;
+    margin-top: 10px;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+form button:hover{
+    width:100%;
+    margin-left: 0%;
+    letter-spacing: 3px;
+}
+.bth{
+    height:30px;
+    width:30px;
+    border: none;
+    background-image: url(./cr2.png);
+    border-radius: 20px;
+    background-color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    margin-right:25px;
+    margin-top:20px;
+    font-family: serif;
+    float:right;
+    opacity: 0.75;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+.bth:hover{
+    margin-right:23px;
+    margin-top:18px;
+    height:32px;
+    width:32px;
+    opacity: 1;
+}
+.ex{
+    margin-top: 30px;
+    font-size: 16px;
+    font-family: serif;
+    color:grey;
+    opacity: 0.8;
+}
+.ex:hover{
+    opacity: 1;
+}
+.lo{
+    color:white;
+    font-size: 18px;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
