@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html,
+        body {
+        height: 100%;
+        overflow: hidden;
+        background-color: black;
+        }
+
+        body {
+        width: 200%;
+        background-image: url("/hori.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        }
+
+        p {
+        color: #fff;
+        font-size: 4vw;
+        font-family: monospace;
+        }
+
+        ::-webkit-scrollbar{
+        display:flex;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        function scrollHorizontally(e) {
+        e = window.event || e;
+        var delta = Math.max(-1, Math.min(1, (e.wheelDelta || -e.detail)));
+        var scrollSpeed = 60; // Janky jank <<<<<<<<<<<<<<
+        document.documentElement.scrollLeft -= (delta * scrollSpeed);
+        document.body.scrollLeft -= (delta * scrollSpeed);
+        e.preventDefault();
+        }
+
+        if (window.addEventListener) {
+        // IE9, Chrome, Safari, Opera
+        window.addEventListener("mousewheel", scrollHorizontally, false);
+        // Firefox
+        window.addEventListener("DOMMouseScroll", scrollHorizontally, false);
+        } else {
+        // IE 6/7/8
+        window.attachEvent("onmousewheel", scrollHorizontally);
+        }
+    </script>
+</body>
+</html>
